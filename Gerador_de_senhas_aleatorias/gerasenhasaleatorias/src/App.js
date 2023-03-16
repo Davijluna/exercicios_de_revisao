@@ -1,7 +1,10 @@
 import React from 'react';
+import { nanoid } from 'nanoid'
 
 const App = () => {
-  return <div>Meu App em React</div>;
+
+  const randomPassword = nanoid()
+  return <div>{randomPassword}</div>;
 };
 
 export default App;
