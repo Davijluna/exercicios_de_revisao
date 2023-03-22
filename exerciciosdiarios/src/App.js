@@ -1,6 +1,6 @@
 import React from "react";
 
-// COM DESCINTRUTURAÇÃO.
+// COM DESESTRUTURAÇÃO.
 const Titulo = ({cor, texto}) => {
   return <h1 style={{color: cor}}>{texto}</h1>
 } 
@@ -18,7 +18,7 @@ const App = () => {
 
 export default App;
 
-// SEM DESCINTRUTURAÇÃO.
+// SEM DESESTRUTURAÇÃO.
 // const Titulo = (props) => {
 //   return <h1 style={{color: props.cor}}>{props.texto}</h1>
 // } 
