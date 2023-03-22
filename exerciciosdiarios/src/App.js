@@ -1,7 +1,4 @@
 import React from "react";
-import Footer from "./Footer";
-import Form from "./Form/Form";
-import Header from "./Header";
 
 const Teste = () => {
   const active = true;
@@ -14,10 +11,7 @@ const App = () => {
   return (
     <div>
       Meu App
-      <Teste />
-      <Header />
-      <Form />
-      <Footer />
+      <Teste /> 
     </div>
   );
 }
