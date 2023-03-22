@@ -5,8 +5,8 @@ import Input from './Input'
 function Form() {
   return (
     <div>
-      <Input />
-      <Input />
+      <Input id="email" label="Email" required />
+      <Input id="password" type="password" label="Password"/>
       <Button />
     </div>
   )
