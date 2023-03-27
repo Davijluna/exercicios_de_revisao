@@ -7,10 +7,10 @@ function App() {
     <div>
       <ul>
       <li>
-        <a href="#">Home</a>
+        <a href="home">Home</a>
       </li>
       <li>
-       <a href="#">Produtos</a> 
+       <a href="protudo">Produtos</a> 
       </li>
       </ul>
     </div>
