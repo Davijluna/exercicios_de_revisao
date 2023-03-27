@@ -4,6 +4,7 @@ const Produtos = () => {
   return (
     <div>
       Produtos
+      teste
     </div>
   )
 }
