@@ -11,10 +11,10 @@ function App() {
      
       <ul>
       <li>
-        <a href='/produtos'>Produtos</a>
+        <a href='/' >Home</a>
       </li>
       <li>
-        <a href='/' >Home</a>
+        <a href='/produtos'>Produtos</a>
       </li>
       </ul>
       {pathname === '/' ? <Home /> : <Produtos/>}
