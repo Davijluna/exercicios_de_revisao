@@ -1,4 +1,5 @@
 import React from 'react'
+import Titulo from './Titulo';
 
 
 const Produtos = () => {
@@ -8,9 +9,7 @@ const Produtos = () => {
   ] 
   return (
     <>
-    <div>
-      Produtos
-    </div>
+   <Titulo texto="Produtos"/>
     {produtos.map((produto) => 
     <div style={{border: "solid 1px", margin: '10px', padding: '15px'}}>{produto.nome}
     <div>

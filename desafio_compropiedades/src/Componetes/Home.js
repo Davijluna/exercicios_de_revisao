@@ -1,10 +1,10 @@
 import React from 'react'
+import Titulo from './Titulo';
 
 const Home = () => {
   return (
     <div>
-      <p style={{color:
-      'green', fontSize: '5vh'}}>Home</p>
+      <Titulo texto="Home"/>
       <p>Essa é a home do site</p>
     </div>
   );
