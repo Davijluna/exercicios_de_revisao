@@ -12,7 +12,7 @@ const Produtos = () => {
       Produtos
     </div>
     {produtos.map((produto) => 
-    <div style={{border: "solid 1px"}}>{produto.nome}
+    <div style={{border: "solid 1px", margin: '10px', padding: '15px'}}>{produto.nome}
     <div>
       {produto.propiedades.map((valor) => (
         <li>{valor}</li>
