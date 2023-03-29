@@ -1,10 +1,9 @@
 import React from "react";
 
-function App() {
-  return (
-    <div>
-     <h1>Hello World!!! </h1>
-    </div>
+function App() { 
+  const ativo = true;
+
+  return (<button disabled={!ativo}>{ativo ? 'Ativo' :'Inativo'}</button>
   );
 }
 
