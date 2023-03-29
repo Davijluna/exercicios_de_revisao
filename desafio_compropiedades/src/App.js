@@ -2,7 +2,7 @@ import React from 'react'
 import Home from './Componetes/Home'
 import Produtos from './Componetes/Produtos'
 
-
+// Exercicio finalizado
 
 function App() {
   const {pathname} = window.location
