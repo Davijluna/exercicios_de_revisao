@@ -1,5 +1,5 @@
 import React from 'react'
-
+// aula useStatre 1
 const Modal = ({modal, setModal}) => {
   if (modal === true) {
     return (
