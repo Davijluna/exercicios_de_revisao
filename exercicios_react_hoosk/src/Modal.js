@@ -1,5 +1,6 @@
 import React from 'react'
-// aula useStatre 1
+// aula useState 1 OK.
+// aula useState 2
 const Modal = ({modal, setModal}) => {
   if (modal === true) {
     return (
