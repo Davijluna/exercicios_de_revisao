@@ -2,8 +2,11 @@ import React from "react";
 import ButtonModal from "./ButtonModal";
 import Modal from "./Modal";
 // 
-function App() { 
-  const [modal, setModal] = React.useState(false);
+const App = () => { 
+  const [modal, setModal] = React.useState(() => {
+    const ativo = window.localStorage.getItem('ativo');
+    return ativo;
+  });
   const [items, setItems] = React.useState('teste');
 
   function handleClick() {
