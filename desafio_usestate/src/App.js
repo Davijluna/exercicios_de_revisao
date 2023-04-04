@@ -1,9 +1,15 @@
 import React from "react";
+import Smartophone from "./Componentes/Smartophone";
+import Notebook from "./Componentes/Notebook";
+import Table from "./Componentes/Tablet";
 
 function App() {
   return (
     <div>
-      <h1>Teste 1</h1>
+      <Smartophone />
+      <Notebook />
+      <Table />
+
     </div>
   );
 }
