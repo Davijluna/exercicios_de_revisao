@@ -9,6 +9,7 @@ const App = () => {
   });
   const [items, setItems] = React.useState('teste');
 
+  console.log('Log')
   function handleClick() {
     // items = 'Outros'; esta parte deve usar o setIems para alterar o estado. 
     setItems('Outros')
