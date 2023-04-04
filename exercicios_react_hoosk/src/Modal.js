@@ -2,6 +2,7 @@ import React from 'react'
 // aula useState 1 OK.
 // aula useState 2 OK.
 // aula useState 3 exercicios.
+// indo para exercicios.
 const Modal = ({modal, setModal}) => {
   if (modal === true) {
     return (
