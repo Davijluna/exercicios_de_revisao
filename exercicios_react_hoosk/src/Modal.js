@@ -3,6 +3,7 @@ import React from 'react'
 // aula useState 2 OK.
 // aula useState 3 exercicios.
 // indo para exercicios.
+// iniciando desafio
 const Modal = ({modal, setModal}) => {
   if (modal === true) {
     return (
