@@ -11,9 +11,9 @@ function App() {
   }
   return (
     <div>
-      <Smartophone style={{margin: '.5rem'}} onClick={handleclick} />
-      <Notebook style={{margin: '.5rem'}} onClick={handleclick} />
-      <Table style={{margin: '.5rem'}} onClick={handleclick} />
+      <Smartophone onClick={handleclick} />
+      <Notebook onClick={handleclick} />
+      <Table onClick={handleclick} />
 
     </div>
   );

@@ -2,7 +2,7 @@ import React from 'react'
 
 const Tablet = () => {
   return (
-    <button>
+    <button style={{margin: '.5rem'}}>
       Tablet
     </button>
   )

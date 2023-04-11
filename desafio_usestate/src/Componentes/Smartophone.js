@@ -2,7 +2,7 @@ import React from 'react'
 
 const Smartophone = () => {
   return (
-   <button>
+   <button style={{margin: '.5rem'}}>
     Smartophone
    </button>
   )

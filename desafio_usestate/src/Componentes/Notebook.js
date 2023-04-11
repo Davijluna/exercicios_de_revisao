@@ -2,7 +2,7 @@ import React from 'react'
 
 const Notebook = () => {
   return (
-  <button>
+  <button style={{margin: '.5rem'}}>
     Notebook
   </button>
   )
