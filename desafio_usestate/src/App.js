@@ -1,20 +1,10 @@
 import React from "react";
-import Smartophone from "./Componentes/Smartophone";
-import Notebook from "./Componentes/Notebook";
-import Table from "./Componentes/Tablet";
+import Produto from "./Produto";
 
-function App() {
-  const [produto, setProduto] = React.useState(null);
-
-  function handleclick(event) {
-    console.log(event.target.innerText);
-  }
+const App =() => {
   return (
     <div>
-      <Smartophone onClick={handleclick} />
-      <Notebook onClick={handleclick} />
-      <Table onClick={handleclick} />
-
+      <Produto />
     </div>
   );
 }
