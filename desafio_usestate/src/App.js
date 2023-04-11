@@ -2,13 +2,18 @@ import React from "react";
 import Smartophone from "./Componentes/Smartophone";
 import Notebook from "./Componentes/Notebook";
 import Table from "./Componentes/Tablet";
-// tentar fazer essa parte antes das 10 da noite 
+
 function App() {
+  const [produto, setProduto] = React.useState(null);
+
+  function handleclick(event) {
+    console.log(event.target.innerText);
+  }
   return (
     <div>
-      <Smartophone />
-      <Notebook />
-      <Table />
+      <Smartophone style={{margin: '.5rem'}} onClick={handleclick} />
+      <Notebook style={{margin: '.5rem'}} onClick={handleclick} />
+      <Table style={{margin: '.5rem'}} onClick={handleclick} />
 
     </div>
   );
