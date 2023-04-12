@@ -6,7 +6,7 @@ const App =() => {
 
   async function handleclick(event) {
    // eslint-disable-next-line no-template-curly-in-string
-   const response = await fetch('https://ranekapi.origamid.dev/json/api/produto/${event.target.innerText}');
+   const response = await fetch(`https://ranekapi.origamid.dev/json/api/produto/${event.target.innerText}`);
     console.log(response);
   }
 
