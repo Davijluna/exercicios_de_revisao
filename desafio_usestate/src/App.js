@@ -19,7 +19,7 @@ const App =() => {
     setDados(json);
   // depois dos dados garregados muda pra false o garregamento.
     setCarregando(false);
-    console.log(json);
+    // console.log(json);
   }
 
   return (
@@ -29,6 +29,7 @@ const App =() => {
       <button style={{margin: '5px'}}  onClick={handleclick} >3</button>
       {carregando && <p>Carregando</p>}
       {!carregando && dados && <Produto dados={dados} />}
+      
     </div>
   );
 }
