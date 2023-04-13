@@ -12,20 +12,21 @@ const App =() => {
   setCarregando(true);
 
   const response = await fetch(
-    `https://ranekapi.origamid.dev/json/api/produto/${event.target.innerText}`,
+    `https://pokeapi.co/api/v2/pokemon/${event.target.innerText}`,
   );
   // transformando a constante response em um arquivo json.
   const json = await response.json();
     setDados(json);
   // depois dos dados garregados muda pra false o garregamento.
     setCarregando(false);
+    console.log(json);
   }
 
   return (
     <div>
-      <button style={{margin: '5px'}} onClick={handleclick} >notebook</button>
-      <button style={{margin: '5px'}}  onClick={handleclick} >Smartphone</button>
-      <button style={{margin: '5px'}}  onClick={handleclick} >tablet</button>
+      <button style={{margin: '5px'}} onClick={handleclick} >1</button>
+      <button style={{margin: '5px'}}  onClick={handleclick} >2</button>
+      <button style={{margin: '5px'}}  onClick={handleclick} >3</button>
       {carregando && <p>Carregando</p>}
       {!carregando && dados && <Produto dados={dados} />}
     </div>
