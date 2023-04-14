@@ -20,6 +20,7 @@ const App =() => {
   // depois dos dados garregados muda pra false o garregamento.
     setCarregando(false);
     // console.log(json);
+    // FAZER TESTE DA API EM OUTRO ARQUIVO
   }
 
   return (
