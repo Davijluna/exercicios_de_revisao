@@ -1,3 +1,5 @@
+// Quebrando a função em pequenas parter para dividir as responsabilidade.
+
 const fetchPokemon  = () => {
   const getPokemonUrl = id => `https://pokeapi.co/api/v2/pokemon/${id}`
 
