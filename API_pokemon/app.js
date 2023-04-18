@@ -10,7 +10,6 @@ const fetchPokemon  = () => {
 
   Promise.all(pokemonPromises)
   .then(pokemosns => {
-    // console.log(pokemosns)
 
     const lisPokemons = pokemosns.reduce((accumulator, pokemon) => {
       const types = pokemon.types.map(typeInfo => typeInfo.type.name)
