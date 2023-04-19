@@ -1,34 +1,35 @@
-// Quebrando a função em pequenas parter para dividir as responsabilidade.
+const getPokemonUrl = (id) => `https://pokeapi.co/api/v2/pokemon/${id}`;
 
-const fetchPokemon  = () => {
-  const getPokemonUrl = id => `https://pokeapi.co/api/v2/pokemon/${id}`
+const generatePokemonPromises = () =>
+  Array(150).fill().map((_,index) =>
+      fetch(getPokemonUrl(index + 1)).then(response => response.json()));
 
-  const pokemonPromises = []
+// Recebe a funçâo do primeiro then.
+// Refatorando a função para ter somente um tipo de retorno
+// Desestruturando o Objeto pokemon 
+const generateHTML = pokemosns => pokemosns.reduce((accumulator, { name, id, types }) => {
+    const elementTypes = types.map(typeInfo => typeInfo.type.name);
+    accumulator += `
+    <li class="card ${elementTypes[0]}">
+    <img class="card-image" alt="${
+      name
+    }" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${id}.png"/ /}
+      <h2 class="card-title"> ${id}.${name}</h2>
+      <p class="card-subtitle">${elementTypes.join(' | ')}</p>
+    </li>`;
+    return accumulator;
+  }, '');
 
-  for (let i = 1; i <= 150; i += 1) {
-    pokemonPromises.push(fetch(getPokemonUrl(i)).then(response => response.json()))
-    
-  }
 
-  Promise.all(pokemonPromises)
-  .then(pokemosns => {
-
-    const lisPokemons = pokemosns.reduce((accumulator, pokemon) => {
-      const types = pokemon.types.map(typeInfo => typeInfo.type.name)
-
-      accumulator += `
-      <li class="card ${types[0]}">
-      <img class="card-image" alt="${pokemon.name}" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${pokemon.id}.png"/ /}
-        <h2 class="card-title"> ${pokemon.id}.${pokemon.name}</h2>
-        <p class="card-subtitle">${types.join(' | ')}</p>
-      </li>`
-      return accumulator
-    }, '')
-
-    const ul = document.querySelector('[data-js="pokedex"]')
-
-    ul.innerHTML = lisPokemons
-  })
+const insertPokemonsIntoPage = pokemons => {
+  const ul = document.querySelector('[data-js="pokedex"]')
+  ul.innerHTML = pokemons
 }
 
-fetchPokemon()
+
+
+  const pokemonPromises = generatePokemonPromises();
+
+  Promise.all(pokemonPromises)
+    .then(generateHTML)
+    .then(insertPokemonsIntoPage);
