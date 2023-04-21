@@ -3,7 +3,7 @@ const getPokemonUrl = (id) => `https://pokeapi.co/api/v2/pokemon/${id}`;
 const generatePokemonPromises = () =>
   Array(150).fill().map((_,index) =>
       fetch(getPokemonUrl(index + 1)).then(response => response.json()));
-
+// NO MOMENTO ESTÁ PRONTO ESSE EXERCICO MAS FUTURAMENTE FAREI MELHORIAS.
 // Recebe a funçâo do primeiro then.
 // Refatorando a função para ter somente um tipo de retorno
 // Desestruturando o Objeto pokemon 
