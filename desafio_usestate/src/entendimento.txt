@@ -1,0 +1,11 @@
+ no index chamamos o app que tem toda a parte de funcionamento para mostrar 
+
+ no app chamamos o produto e criamos a função app que nela tem os estado e seus dados que ela ira entender que inicialmente nesses estados temos que acessar o React.useState que é uma função já crianda para iniciar um estado no primeiro nome ex: primeiro nos temos as coisas que já estão definidas os valores iniciais já no segundo no setNome nos temos os valores que nos temos para acrecentar para a função 
+
+
+depois disso nos temos return ali nos podemos realizar varias situações como colocar class para o css ou até mesmo ja estilizar na propia linha mas o que mais nos importa é o fato de podermos chamar uma função e nessa função é que fazemos tudo que está na função app que criamos logo acima 
+
+E para finalizar nos podemos usar os dados que utilizamos como validação em condições como ternario ou if else e muitas outras 
+
+Sem esquecer do componete Produto que foi chamado ao inicio do componente App, nesse componete nos "configuramos todas as informações para quando a função passar por todo o componente Produto ela somente pegar as informações da url que nos intereça e essas condição do componente é passado por props que é um paramentro especial usado para exemplificar as informações é acessada com ex: props.nome 
+
