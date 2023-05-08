@@ -4,19 +4,22 @@ import React from 'react'
 const App = () => {
 
   const [contar, setContar] = React.useState(0);
-  console.log('Executou Fora')
-  React.useEffect(() => {
-    console.log('Executou Dentro')
-  }, []);
+  const [dados, setDados] = React.useState(null);
 
   React.useEffect(() => {
-    document.title = 'Total ' + contar;
-  }, [contar]);
+   const response = fetch('https://ranekapi.origamid.dev/json/api/produto/notebook')
+      .then((response) => response.json())
+      .then((json) => setDados(json));
+      console.log(response)
+  }, []);
 
   return (
     <>
      <div>
-
+      {dados && <div>
+      <h1>{dados.nome}</h1>
+       <p>R$ {dados.preco * contar}</p> 
+        </div>}
      <button onClick={() => setContar(contar + 1)}>{contar}</button>
      
      </div>
