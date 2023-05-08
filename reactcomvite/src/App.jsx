@@ -1,11 +1,23 @@
-import './App.css'
+import React from 'react'
+// import './App.css'
 
-function App() {
+const App = () => {
+
+  const [contar, setContar] = React.useState(0);
+  console.log('Executou Fora')
+  React.useEffect(() => {
+    console.log('Executou Dentro')
+  }, []);
+
+  React.useEffect(() => {
+    document.title = 'Total ' + contar;
+  }, [contar]);
 
   return (
     <>
      <div>
-      <h1> Hello Mundo!!!</h1>
+
+     <button onClick={() => setContar(contar + 1)}>{contar}</button>
      
      </div>
     </>
