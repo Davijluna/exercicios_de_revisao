@@ -1,7 +1,10 @@
 import React from 'react'
+import Produto from './Produto';
 // import './App.css'
 
 const App = () => {
+
+  const [ativo, setAtivo] = React.useState(false);
 
   // const [contar, setContar] = React.useState(0);
   // const [dados, setDados] = React.useState(null);
@@ -15,6 +18,8 @@ const App = () => {
 
   return (
     <>
+    <Produto />
+    <button onClick={() => setAtivo(!ativo)}>Ativar</button>
      {/* <div>
       {dados && <div>
       <h1>{dados.nome}</h1>
@@ -24,6 +29,7 @@ const App = () => {
      
      </div>
     </> */}
+    </>
   )
 }
 
