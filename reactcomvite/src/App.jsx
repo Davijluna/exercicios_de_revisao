@@ -18,7 +18,7 @@ const App = () => {
 
   return (
     <>
-    <Produto />
+    {ativo && <Produto />}
     <button onClick={() => setAtivo(!ativo)}>Ativar</button>
      {/* <div>
       {dados && <div>
