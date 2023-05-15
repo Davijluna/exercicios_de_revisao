@@ -3,7 +3,7 @@ import Produto from './Produto';
 // import './App.css'
 
 const App = () => {
- // continuando revisão de react
+ // continuando revisão de react..
   const [ativo, setAtivo] = React.useState(false);
 
   // const [contar, setContar] = React.useState(0);
