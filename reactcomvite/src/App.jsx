@@ -14,7 +14,7 @@ const App = () => {
   //     .then((response) => response.json())
   //     .then((json) => setDados(json));
   //     console.log(response)
-  // }, []);
+  // }, []);..
 
   // adicionando comentario para tentar resolver push.
 
