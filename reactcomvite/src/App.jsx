@@ -16,6 +16,8 @@ const App = () => {
   //     console.log(response)
   // }, []);
 
+  // adicionando comentario para tentar resolver push.
+
   return (
     <>
     {ativo && <Produto />}
