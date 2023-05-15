@@ -4,7 +4,7 @@ import Produto from './Produto';
 
 const App = () => {
  // continuando revisão de react.....
-  const [ativo, setAtivo] = React.useState(false);
+  // const [ativo, setAtivo] = React.useState(false);
 
   // const [contar, setContar] = React.useState(0);
   // const [dados, setDados] = React.useState(null);
