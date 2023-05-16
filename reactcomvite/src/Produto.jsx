@@ -9,9 +9,10 @@ import React from 'react';
   
     window.addEventListener('scroll', handleScroll);
     return () => {
+      // nesta parte estamos retirando a função de scroll.
       window.removeEventListener('scroll', handleScroll)
-    }
-  }, [])
+    };
+  }, []);
 
 
 
